@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Righteous", sans-serif;
+}
+
+header {
+    padding: 0 100px;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+
+.dropdown a {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    margin-left: 169px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.795);
+}
+
+.projects:hover .dropdown{
+    display: block;
+    z-index: 100;
+}
+
+.chat {
+    font-weight: bold;
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 1px solid #000;
+
+}
+
+.chat:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+
+.navHr {
+    margin-left: 100px;
+    margin-bottom: 0;
+    width: 80%;
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 61%, 0.808);
+}
+
+.main {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 {
+    flex:1;
+    min-width: 50%;
+}
+
+.first h1 {
+    text-align: left;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.first .ui {
+    background-color: rgb(69, 69, 255);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 13px;
+}
+
+.content {
+    font-size: 1.5rem;
+}
+
+.first button {
+    font-size: 1.5rem;
+}
+
+.hire {
+    padding: 20px 30px;
+    border-radius: 0;
+    border: none;
+    background-color: hsl(12, 98%, 55%);
+}
+
+.hire:hover, .projectButton:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(95, 95, 95, 0.795);
+}
+
+.projectButton {
+    padding: 20px 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.clients {
+    padding-top: 30px;
+}
+
+.clientNumber {
+    font-size: 1.5rem;
+}
+
+.projectsDone{
+    display: inline-block;
+}
+
+.projectNumber {
+    font-size: 1.5rem;
+}
+
+.contact {
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.contact span {
+    font-size: 1.5rem;
+}
+
+.projectStats {
+    padding-left: 100px;
+}
+
+.projectStats p {
+    font-size: 1.5rem;
+}
+
+.detailStats {
+    padding-top: 15px;
+    font-size: 1.2rem;
+}
+
+.detailStats li {
+    padding-bottom: 5px;
+}
+
+
+.second {
+    width: 44.8%;
+    color: #fff;
+    background-color: #000;
+    margin-top: 50px;
+    padding: 50px 100px 18px 0;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.knowMore {
+    background-color: #ffd200;
+    padding: 10px 20px;
+}
+
+.detailStats li {
+    list-style-type: none;
+}
+
+.container2 {
+    flex:1;
+}
+
+.backImg {
+    position: absolute;
+    overflow: hidden;
+    max-height: 91.8%;
+    width: 960px;
+}
+
+.backImg img {    
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.figma, .diamond, .xd {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.figma {
+    top: 40%;
+    left: 60%;
+}
+
+.diamond {
+    top: 25%;
+    right: 5%;
+}
+.xd {
+    right: 5%;
+    bottom: 40%;
+}
+
+.container2 p {
+    color: black;
+    margin: 0;
+    font-size: 2rem;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.newsletter {
+    position: absolute;
+    bottom: 10%;
+    right: 13%;
+}
+
+.newsletter input {
+    height: 40px;
+    width: 250px;
+    text-align: left;
+}
+
+input[type="text"]::placeholder {
+    text-align: left;
+  }
+
+.btnNewsletter {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border: none;
+
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+
+.podcastImg {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}

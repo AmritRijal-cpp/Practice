@@ -1,0 +1,9 @@
+required elements 
+    input
+    button
+    list 
+required functions
+    add()
+    delete()
+local storage use garne 
+
