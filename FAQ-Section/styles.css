@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+body header {
+  width: auto;
+}
+body #main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: repeat-x;
+}
+body #main .container {
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;
+  background-color: #fff;
+  overflow: hidden;
+}
+body #main .container #heading {
+  margin-top: 0;
+  position: relative;
+}
+body #main .container #heading .headingImage {
+  position: absolute;
+  top: 3px;
+  padding-top: 5px;
+  height: 31px;
+  width: auto;
+}
+body #main .container #heading .faqs {
+  padding-left: 50px;
+  font-size: 40px;
+}
+body #main .container h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: hsl(292, 42%, 14%);
+}
+body #main .container h3 img {
+  float: right;
+  width: 28px;
+  height: auto;
+}
+body #main .container h3 img:hover {
+  cursor: pointer;
+}
+body #main .container hr {
+  border-color: hsla(0, 0%, 39%, 0.082);
+}
+body #main .container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+  max-height: 0px;
+  transition: all 1s ease-in-out 0s;
+  overflow: hidden;
+}
+body #main .container p.show {
+  max-height: 500px;
+}/*# sourceMappingURL=styles.css.map */
