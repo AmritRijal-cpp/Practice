@@ -1,0 +1,17 @@
+[
+    {
+        "Flavour": "PINEAPPLE FLAVOUR",
+        "Price": "$49.50"
+    },
+
+    {
+        "Flavour": "MANGO FLAVOUR",
+        "Price": "$49.50"
+        
+    },
+
+    {
+        "Flavour": "GUAVA FLAVOUR",
+        "Price": "$49.50"
+    }
+]

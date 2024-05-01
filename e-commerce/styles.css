@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.topContainer {
+    background-image: url(assets/bg.png);
+}
+
+nav {
+    padding: 0 0 50px 0;
+    background-color: transparent;
+    padding-left: 100px;
+}
+
+nav ul {
+    padding: 20px 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #ff9e79;
+    border-radius: 50%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+
+.list {
+    align-self: center;
+}
+
+.navbtn {
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ee774a;
+    border: none;
+    width: 10%;
+}
+
+.guava {
+    height: 150px;
+    width: auto;
+}
+
+.mango {
+    height: 300px;
+    width: auto;
+}
+
+.subContainer2 p {
+    display: inline;
+    margin: 0;
+}
+
+.subContainer2 h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 3%;
+}
+
+.pineapple {
+    height: 150px;
+    width: auto;
+}
+
+.main {
+    display: flex;
+    height: calc(100% - 85px);
+}
+
+.subContainer1 {
+    flex: 1;
+    position: relative;
+}
+
+.subContainer1 p {
+    padding-left: 100px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.subContainer2 {
+    flex: 1;
+}
+
+.subContainer2 img {
+    position: relative;
+    top: 0%;
+    left: 40%;
+    height: 500px;
+}
+
+.box {
+    height: 500px;
+    width: 710px;
+    background-color: #c1d38f;
+    display: inline-block;
+    position: relative;
+}
+
+.flavour {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 3.2rem;
+    height: 110px;
+    width: 300px;
+
+
+}
+
+.subContainer3 {
+    flex: 1;
+    position: relative;
+}
+
+.subContainer3 p {
+    width: 200px;
+    padding: 150px 0 0 100px;
+}
+
+.price {
+    display: inline-block;
+    position: relative;
+    bottom: 90%;
+    left: 40%;
+    font-size: 2rem;
+    height: 90px;
+}
+
+.prevSection {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    background-color: #d0f0f6;
+    border-radius: 67% 33% 31% 69% / 58% 61% 39% 42%;
+}
+
+.prevSection img,
+button {
+    align-self: center;
+    width: 70px;
+}
+
+#prev {
+    border: none;
+    background-color: transparent;
+    font-size: bolder;
+}
+
+#prev .text {
+    font-weight: bolder;
+}
+
+#next {
+    border: none;
+    background-color: transparent;
+}
+
+#next .text {
+    font-weight: bolder;
+}
+
+#prev .text:hover {
+    cursor: pointer;
+}
+
+#next .text:hover {
+    cursor: pointer;
+}
+
+.nextSection {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    background-color: #d0f0f6;
+    border-radius: 27% 73% 73% 27% / 58% 61% 39% 42%;
+}
+
+.nextSection img,
+button {
+    align-self: center;
+    width: 70px;
+}
+
+
+
+
+.bottomContainer {
+    background-color: #fcf8ee;
+    flex-grow: 1;
+    background-image: url(assets/bg2.svg);
+}
+
+.bottomContainer p {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
