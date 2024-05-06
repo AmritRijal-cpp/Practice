@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+
+  <header>
+    <nav class="navbar">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a href="#" class="navBranding">sneakers</a>
+      <ul class="navMenu">
+        <li class="navItems"><a href="#" class="navLinks">Collections</a></li>
+        <li class="navItems"><a href="#" class="navLinks">Men</a></li>
+        <li class="navItems"><a href="#" class="navLinks">Women</a></li>
+        <li class="navItems"><a href="#" class="navLinks">About</a></li>
+        <li class="navItems"><a href="#" class="navLinks">Contact</a></li>
+      </ul>
+      <div class="cartProfile">
+        <div class="cartLogo"><img src="images/icon-cart.svg" alt="cart icon"></div>
+        <div class="profile"><img src="images/image-avatar.png" alt="profile logo"></diiv>
+      </div>
+    </nav>
+    <hr>
+  </header>
+  <main>
+    <div class="leftContainer" id="leftContainer">
+      <div class="mainImageContainer">
+        <span><img src="images/icon-previous.svg" alt="previous" class="previous" onclick="(previous())"></span>
+        <img src="images/image-product-1.jpg" alt="sneaker" class="mainImage">
+        <span><img src="images/icon-next.svg" alt="next" class="next" onclick="(next())"></span>
+      </div>
+      <div class="thumbnailImage">
+        <img class="thumbnail selected" src="images/image-product-1-thumbnail.jpg" alt="sneaker" onclick="activeImage(1); activeBorder(1)">
+        <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="sneaker" onclick="activeImage(2); activeBorder(2)">
+        <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="sneaker" onclick="activeImage(3); activeBorder(3)">
+        <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="sneaker" onclick="activeImage(4); activeBorder(4)">
+      </div>
+
+    </div>
+
+    <div class="rightContainer" id="rightContainer">
+      <div class="rightContainerTop" id="rightContainerTop">
+        
+        <span class="company">SNEAKER COMPANY</span>
+      
+        <h2 class="sneakerName">Fall Limited Edition Sneakers</h2>
+      
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+        <div class="price" id="price">
+          <span class="discountPrice">$125.00</span>
+          <span class="discount">50%</span>
+          <div class="spacer"></div>
+          <br>
+          <span class="fullPrice">$250.00</span>
+
+        </div>
+      </div>
+      
+      <div class="rightContainerBottom" id="rightContainerBottom">
+        <div class="counter">
+         <button class="minus"><img src="images/icon-minus.svg" alt="minus"></button>
+         <span class="count">0</span>
+          <button class="plus"><img src="images/icon-plus.svg" alt="plus"></button>
+        </div>
+        <button class="cart">Add to cart</button>
+
+      </div>
+    
+
+    </div>
+
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</body>
+</html>
