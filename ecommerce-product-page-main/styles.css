@@ -9,6 +9,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .navbar {
   padding: 25px 0;
   display: flex;
@@ -84,6 +88,7 @@ body {
   color: hsl(219, 9%, 45%);
 }
 .navbar .cartProfile {
+  position: relative;
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
@@ -92,10 +97,79 @@ body {
 }
 .navbar .cartProfile .cartLogo {
   align-self: center;
+  position: relative;
+}
+.navbar .cartProfile .cartLogo .numberOfProduct {
+  background-color: #ff7d1b;
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 70%;
+  left: 10px;
 }
 .navbar .cartProfile .profile img {
   height: 50px;
   width: auto;
+}
+.navbar .cartProfile .cartLogo, .navbar .cartProfile .profile:hover {
+  cursor: pointer;
+}
+.navbar .cartProfile #cartOverlay {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: -20px;
+  width: 350px;
+  height: auto;
+  box-shadow: 1px 10px 35px -4px rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+.navbar .cartProfile #cartOverlay hr {
+  margin: 20px 0;
+}
+.navbar .cartProfile #cartOverlay #productList {
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar .cartProfile #cartOverlay #productList .productImage {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+}
+.navbar .cartProfile #cartOverlay #productList .product {
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .cartProfile #cartOverlay #productList .product .deleteCart:hover {
+  cursor: pointer;
+}
+.navbar .cartProfile #cartOverlay #productList .product .productInfo {
+  padding: 0 15px;
+  color: hsl(213, 5%, 45%);
+}
+.navbar .cartProfile #cartOverlay #productList .product .productInfo .totalPrice {
+  font-weight: bold;
+  color: #000;
+}
+.navbar .cartProfile #cartOverlay #productList .checkout {
+  padding: 10px 0;
+  font-weight: bold;
+  color: #fff;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .navbar .cartProfile #cartOverlay {
+    width: 80vw;
+  }
 }
 
 hr {
@@ -293,6 +367,7 @@ main #rightContainer #rightContainerBottom .cart:hover {
   }
   main #rightContainer {
     padding: 0;
+    margin-bottom: 20px;
   }
   main #rightContainer #rightContainerTop {
     padding: 0;

@@ -10,6 +10,10 @@ body {
     font-family: "Kumbh Sans", sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 
 .navbar {
@@ -103,6 +107,7 @@ body {
     }
 
     .cartProfile {
+        position: relative;
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
@@ -111,12 +116,96 @@ body {
 
         .cartLogo {
             align-self: center;
+            position: relative;
+
+            .numberOfProduct {
+                background-color: #ff7d1b;
+                border-radius: 10px;
+                font-size: 10px;
+                padding: 0 5px;
+                position: absolute;
+                bottom: 70%;
+                left: 10px;
+            }
         }
 
         .profile {
             img {
                 height: 50px;
                 width: auto;
+            }
+        }
+
+        .cartLogo, .profile:hover {
+            cursor: pointer;
+        }
+
+        #cartOverlay {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            display: none;
+            position: absolute;
+            top: 110%;
+            right: -20px;
+            width: 350px;
+            height: auto;
+            box-shadow: 1px 10px 35px -4px rgba(0, 0, 0, 0.75);
+            z-index: 999;
+
+            
+
+            hr {
+                margin: 20px 0;
+            }
+
+            #productList {
+                flex-direction: column;
+                justify-content: center;
+
+                .productImage {
+                    height: 50px;
+                    width: auto;
+                    border-radius: 5px;
+                }
+
+                .product {
+                    padding: 10px 0;
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .deleteCart:hover {
+                        cursor: pointer;
+                    }
+
+                    .productInfo {
+                        padding: 0 15px;
+                        color: hsl(213, 5%, 45%);
+
+                        .totalPrice {
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+                }
+
+                .checkout {
+                    padding: 10px 0;
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: hsl(26, 100%, 55%);
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                
+            }
+        }
+        @media (max-width: 768px) {
+            #cartOverlay {
+                width: 80vw;
             }
         }
     }
@@ -189,6 +278,7 @@ main {
 
         #rightContainerTop {
             padding-right: 20%;
+
             .company {
                 color: hsl(26, 100%, 55%);
                 font-size: 1rem;
@@ -358,6 +448,7 @@ main {
 
         #rightContainer {
             padding: 0;
+            margin-bottom: 20px;
 
             #rightContainerTop {
                 padding: 0;
