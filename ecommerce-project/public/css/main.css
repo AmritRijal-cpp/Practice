@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.dropend {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+.brand-submenu {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 100%;
+  }
+}
+  
