@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,34 +17,88 @@ body {
 .topContainer {
   background-image: url(assets/bg.png);
 }
-
-nav {
-  padding: 0 0 50px 0;
-  background-color: transparent;
-  padding-left: 100px;
-}
-nav ul {
-  padding: 20px 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.topContainer nav {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: transparent;
+  padding-left: 20px;
 }
-nav ul li {
-  display: inline;
+.topContainer nav .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
-nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
+.topContainer nav .navMenu .item {
+  list-style: none;
+}
+.topContainer nav .navMenu .item a {
   color: hsl(0, 0%, 0%);
   text-decoration: none;
   transition: 0.5s ease;
 }
-nav ul li a:hover {
+.topContainer nav .navMenu .item a:hover {
   background-color: hsl(0, 0%, 33%);
 }
+.topContainer nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+.topContainer nav .bar {
+  display: block;
+  width: 40px;
+  height: 10px;
+  margin: 5px auto;
+  border-radius: 4px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .topContainer nav .hamburger {
+    display: block;
+    padding-right: 10px;
+  }
+  .topContainer nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .topContainer nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .topContainer nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-21px) rotate(-45deg);
+  }
+  .topContainer nav .navMenu {
+    padding-top: 100px;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1000;
+    background-color: #ee774a;
+  }
+  .topContainer nav .navbtn {
+    padding: 15px 30px 15px 15px;
+  }
+  .topContainer nav .item {
+    margin: 16px 0px;
+  }
+  .topContainer nav .navMenu.active {
+    left: 0;
+  }
+}
 
+@media (max-width: 768px) {
+  nav {
+    padding-left: 0;
+  }
+}
 .buy {
   width: 50px;
   height: 50px;
@@ -49,11 +109,9 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-.list {
-  align-self: center;
-}
-
 .navbtn {
+  margin-right: -24px;
+  margin-top: -11px;
   padding: 20px 20px;
   color: #fff;
   font-size: 1rem;
@@ -63,18 +121,20 @@ nav ul li a:hover {
   width: 10%;
 }
 
-.guava {
+#guava {
   height: 150px;
   width: auto;
 }
 
-.mango {
-  height: 300px;
+#mango {
+  height: 10%;
   width: auto;
 }
 
 .subContainer2 {
-  flex: 1;
+  background-image: url(assets/green.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .subContainer2 p {
   display: inline;
@@ -110,25 +170,9 @@ nav ul li a:hover {
   position: relative;
 }
 .subContainer1 p {
-  padding-left: 100px;
+  padding-left: 20px;
   font-size: 1.5rem;
   font-weight: bolder;
-}
-.subContainer1 .smallButtonPrev {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .subContainer1 .smallButtonPrev {
-    display: block;
-  }
-}
-
-.box {
-  height: 500px;
-  width: 710px;
-  background-color: #c1d38f;
-  display: inline-block;
-  position: relative;
 }
 
 .flavour {

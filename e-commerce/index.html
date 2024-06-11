@@ -12,17 +12,20 @@
 <body>
     <div class="topContainer">
         <nav class="navbar">
-            <ul>
-                <div class="buy">Buy <br>Can.</div>
-
-                <div class="list">
-                    <li class="home"><a href="#">About</a></li>
-                    <li class="works"><a href="#">Products</a></li>
-                    <li class="projects"><a href="#">Gallery</a></li>
-                    <li class="services"><a href="#">Contact</a></li>
-                </div>
+            <div class="buy">Buy <br>Can.</div>
+            
+            <ul class="navMenu">
+                    <li class="item"><a href="#">Products</a></li>
+                    <li class="item"><a href="#">About</a></li>
+                    <li class="item"><a href="#">Gallery</a></li>
+                    <li class="item"><a href="#">Contact</a></li>
+                </ul>
                 <button class="navbtn">GRAB YOUR CAN</button>
-            </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
         </nav>
         <div class="main">
 
@@ -33,21 +36,18 @@
                     <button id="prev" onclick="prev()"><span class="text">Prev</span></button>
 
                 </div>
-                <div class="smallButtonPrev" onclick="prev()"><button>&#10096;</button></div>
             </div>
             <div class="subContainer2">
-                <div class="box">
                     <p><i class="fa-solid fa-fire" style="color: #ff0000;"></i>15 sales in<br>&nbsp;&nbsp;&nbsp; last
                         hour</p>
                         <p class="flavour"><br>MANGO FLAVOUR</p>
                     <h2>LITE CAN</h2><br>
-                    <img src="assets/mango.png" alt="mango" id="mango">
+                    <img src="assets/mango2.png" alt="mango" id="mango">
                     <span class="price">$49.50</span>
-                </div>
 
             </div>
             <div class="subContainer3">
-                <p>We mske our premium, organic beans for 16 hours in cold
+                <p>We make our premium, organic beans for 16 hours in cold
                     filtered water to extract all the things you love about
                     coffee.
                 </p>
@@ -55,7 +55,6 @@
                     <img src="assets/pineapple.png" alt="pineapple" id="pineapple">
                     <button id="next"><span class="text">Next</span></button>
                 </div>
-                <div class="smallButtonNext"><button onclick="next()">&#10097;</button></div>
             </div>
         </div>
     </div>
